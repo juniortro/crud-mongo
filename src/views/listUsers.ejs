@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/head.ejs') %>
+<%- include('partials/navbar.ejs') %>
+
+<section id="listUsers">
+  <ul>
+    <% users.forEach((user) => { %>
+      <li><%= user.name %></li>
+      <% }) %>
+  </ul>
+</section>
